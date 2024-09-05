@@ -1,3 +1,9 @@
 <h1>Random User</h1>
 
-<%= @user %>
+<%= image_tag "#{@user[:picture]}", alt: "profile picture", class: 'profile-picture' %>
+
+<p><strong>First Name:</strong> <%= "#{@user[:first_name]}" %></p>
+<p><strong>Last Name:</strong> <%= "#{@user[:last_name]}" %></p>
+<p><strong>Email:</strong><%= @user[:email] %></p>
+<p><strong>Gender:</strong><%= @user[:gender] %></p>
+<p><strong>Location:</strong><%= "#{@user[:city]}, #{@user[:country]}" %></p>
